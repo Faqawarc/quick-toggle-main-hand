@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "quick-toggle-main-hand",
+  "version": "${version}",
+  "name": "quick-toggle-main-hand",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/quick-toggle-main-hand/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.poitiox.quickToggleMainHand.client.QuickToggleMainHandClient"
+    ],
+    "main": [
+      "org.poitiox.quickToggleMainHand.QuickToggleMainHand"
+    ]
+  },
+  "mixins": [
+    "quick-toggle-main-hand.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
